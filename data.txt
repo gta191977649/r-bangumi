@@ -1,0 +1,6 @@
+Bangumi:{
+    name: String
+    Seasons: [
+        { name:String,max_episodes:int,progress:int}
+    ]
+}
