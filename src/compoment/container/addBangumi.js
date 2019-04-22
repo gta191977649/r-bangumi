@@ -40,7 +40,7 @@ export default class AddBangumi extends Component {
                 <input name="max_episodes" type="number" value={this.state.max_episodes} onChange={this.onInputChange}/>  
                 <label>进度:</label>
                 <input name="progress" type="number" value={this.state.progress} onChange={this.onInputChange}/>  
-                <input type="button" value="OK" onClick={this.add} />
+                <input type="button" value="追加" onClick={this.add} />
             </div>
         )
     }

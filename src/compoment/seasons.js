@@ -16,8 +16,8 @@ class Seasons extends Component {
   }
   render() {
     const season = <div className="season-wrapper">
-      <h2>{this.props.data.name}</h2>
-        <p>Progress {this.props.data.progress}/{this.props.data.max_episodes}</p>
+      <h2>季度: {this.props.data.name}</h2>
+        <p>进度 {this.props.data.progress}/{this.props.data.max_episodes}</p>
     </div>
     const editSeason = <div className="season-wrapper">
       <label>Season name</label>

@@ -27,7 +27,7 @@ class Bangumi extends Component {
         //渲染模式
         const bangumi = <div className="bangumi-wrapper">
                 {this.state.mode === 'EDIT' ?　editBangumi : 
-                <h1>{this.props.name} id:{this.props.id} </h1>
+                <h1>{this.props.name} id: #{this.props.id} </h1>
                 }
                           
 

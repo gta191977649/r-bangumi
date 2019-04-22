@@ -7,18 +7,18 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      bangumi: []
-      /*
+      //bangumi: []
+      
       bangumi:[
         {
           id: 0,
-          name: "Sakura",
+          name: "Your lie in April",
           seasons: [
-            { name:"aaa",max_episodes:13,progress:3}
+            { name:"01",max_episodes:13,progress:3},
           ]
         }
       ]
-      */
+      
     }
     //函数绑定
     this.addBangumi = this.addBangumi.bind(this)
