@@ -4,8 +4,8 @@ class Seasons extends Component {
   render() {
     return (
       <div>
-        <h2>Seasons name</h2>
-        <p>Progress 1/25</p>
+        <h2>{this.props.data.name}</h2>
+        <p>Progress {this.props.data.progress}/{this.props.data.max_episodes}</p>
       </div>
     )
   }

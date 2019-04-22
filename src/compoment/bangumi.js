@@ -3,20 +3,15 @@ import Seasons from './seasons';
 import '../css/bangumi.css';
 
 class Bangumi extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            name: this.props.name,
-            seasons: this.props.seasons,
-        };
-    }
     render() {
+        const seasons = this.props.seasons.map((season,key) => 
+            <Seasons data={season} key={key}/>
+        )
         return (
             <div className="bangumi" >
-                {this.props.name}
-                <h1>Bangumi name</h1>
+                <h1>{this.props.name}</h1>
                 {/* 可以有很多季 */}
-                    <Seasons/>
+                {seasons}
 
                 <hr/>
             </div>
