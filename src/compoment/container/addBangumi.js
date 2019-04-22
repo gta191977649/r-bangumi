@@ -17,7 +17,7 @@ export default class AddBangumi extends Component {
         let newBangumi =  {
             name: this.state.name,
             seasons: [
-                { name:this.state.seasonname,max_episodes:this.state.max_episodes,progress:3}
+                { name:this.state.seasonname,max_episodes:this.state.max_episodes,progress:this.state.progress}
             ]
         }
         this.props.addBangumi(newBangumi)

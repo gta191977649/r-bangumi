@@ -14,7 +14,7 @@ class App extends Component {
           id: 0,
           name: "Your lie in April",
           seasons: [
-            { name:"01",max_episodes:13,progress:3},
+            { name:"01",max_episodes:13,progress:5},
           ]
         }
       ]
@@ -30,6 +30,7 @@ class App extends Component {
     this.setState(state => ({
       bangumi: [...state.bangumi, newBangumi]
     }))
+    console.log(newBangumi);
   }
   updateBangumi(id,newBangumi) {
 
